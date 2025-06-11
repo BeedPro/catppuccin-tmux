@@ -140,12 +140,14 @@ main() {
     window_status_current_format=$show_window_in_window_status_current
   fi
 
-  if [[ "${user}" == "on" ]]; then
-    right_column2=$right_column2$show_user
+  if [[ "${user}" == "off" ]]; then
+    # right_column2=$right_column2$show_user
+    right_column2=$right_column2
   fi
 
-  if [[ "${host}" == "on" ]]; then
-    right_column2=$right_column2$show_host
+  if [[ "${host}" == "off" ]]; then
+    # right_column2=$right_column2$show_host
+    right_column2=$right_column2
   fi
 
   if [[ "${date_time}" != "off" ]]; then
